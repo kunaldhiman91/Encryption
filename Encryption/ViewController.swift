@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourth: UILabel!
     @IBOutlet weak var fifth: UILabel!
     
+    @IBAction func didTapUpdate(_: UIButton) {
+        self.performUpdates()
+    }
     //Variables to store both the public and private keys.
     var publicKeySec, privateKeySec: SecKey?
     
@@ -23,10 +26,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.generateKeys()
-        self.encryptMessage()
-        self.decryptMessage()
+        self.performUpdates()
         // Do any additional setup after loading the view.
+    }
+    
+    func performUpdates() {
+         self.generateKeys()
+         self.encryptMessage()
+         self.decryptMessage()
     }
 
     func generateKeys() {
@@ -70,7 +77,7 @@ class ViewController: UIViewController {
          Utilize the SecKeyCreateEncryptedData security API to encrypt the message data. You pass public key and the encryption algorithm (SecKeyAlgorithm) for it to be utilized.
          */
         
-        let message = "4043 1710 2843 4577"
+        let message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         self.first.text = "Message is : \(message)"
         guard let messageData = message.data(using: String.Encoding.utf8) else {
             print("Bad message to encrypt")

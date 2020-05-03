@@ -13,6 +13,7 @@
 		5F32753E245E6C010036B850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F32753C245E6C010036B850 /* Main.storyboard */; };
 		5F327540245E6C020036B850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F32753F245E6C020036B850 /* Assets.xcassets */; };
 		5F327543245E6C020036B850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F327541245E6C020036B850 /* LaunchScreen.storyboard */; };
+		5F9B131C245E7E1600BD6A88 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B131B245E7E1600BD6A88 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5F32753F245E6C020036B850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F327542245E6C020036B850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F327544245E6C030036B850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9B131B245E7E1600BD6A88 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				5F32753F245E6C020036B850 /* Assets.xcassets */,
 				5F327541245E6C020036B850 /* LaunchScreen.storyboard */,
 				5F327544245E6C030036B850 /* Info.plist */,
+				5F9B131A245E7DFB00BD6A88 /* Utilities */,
 			);
 			path = Encryption;
+			sourceTree = "<group>";
+		};
+		5F9B131A245E7DFB00BD6A88 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F9B131B245E7E1600BD6A88 /* RoundedButton.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				5F32753B245E6C010036B850 /* ViewController.swift in Sources */,
 				5F327537245E6C010036B850 /* AppDelegate.swift in Sources */,
 				5F327539245E6C010036B850 /* SceneDelegate.swift in Sources */,
+				5F9B131C245E7E1600BD6A88 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
