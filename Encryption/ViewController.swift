@@ -125,7 +125,7 @@ class ViewController: UIViewController {
         }
         self.third.text = "Decrypted String: \(decryptedString)"
         self.fourth.text = "Private Key: \(String(describing: self.privateKeySec))"
-        self.fifth.text = "Private Key: \(String(describing: self.publicKeySec))"
+        self.fifth.text = "Public Key: \(String(describing: self.publicKeySec))"
     }
     
 
